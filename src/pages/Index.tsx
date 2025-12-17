@@ -187,6 +187,111 @@ const Index = () => {
         </div>
       </section>
 
+      <section id="team" className="py-20 px-4">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-4">Наша команда</h2>
+            <p className="text-xl text-muted-foreground">Профессионалы, создающие экологичное будущее</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Icon name="User" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Анна Волкова</h3>
+                <p className="text-primary font-semibold mb-3">Главный дизайнер</p>
+                <p className="text-muted-foreground">
+                  15 лет опыта в создании экологичных интерьеров. Эксперт по устойчивому дизайну.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-32 h-32 bg-secondary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Icon name="User" size={64} className="text-secondary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Дмитрий Соколов</h3>
+                <p className="text-primary font-semibold mb-3">Специалист по энергосбережению</p>
+                <p className="text-muted-foreground">
+                  Инженер-эколог с опытом внедрения энергоэффективных решений в более чем 200 проектах.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
+              <CardContent className="pt-8">
+                <div className="w-32 h-32 bg-accent/30 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Icon name="User" size={64} className="text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold mb-2">Мария Петрова</h3>
+                <p className="text-primary font-semibold mb-3">Менеджер проектов</p>
+                <p className="text-muted-foreground">
+                  Координирует все этапы работы, обеспечивая безупречное качество и сроки реализации.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-4">Как нас найти</h2>
+            <p className="text-xl text-muted-foreground">Москва, ул. Остоженка, д. 25</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="animate-fade-in space-y-6">
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Icon name="MapPin" size={24} className="text-primary mt-1" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Адрес</h3>
+                      <p className="text-muted-foreground">119034, Москва, ул. Остоженка, д. 25</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Icon name="Clock" size={24} className="text-primary mt-1" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Режим работы</h3>
+                      <p className="text-muted-foreground">Пн-Пт: 10:00 - 19:00</p>
+                      <p className="text-muted-foreground">Сб-Вс: 11:00 - 17:00</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4 mb-4">
+                    <Icon name="Phone" size={24} className="text-primary mt-1" />
+                    <div>
+                      <h3 className="font-bold text-lg mb-2">Контакты</h3>
+                      <p className="text-muted-foreground">+7 (999) 123-45-67</p>
+                      <p className="text-muted-foreground">info@ecohome.studio</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="animate-scale-in rounded-xl overflow-hidden shadow-xl h-[500px]">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=37.586944%2C55.743611&z=17&l=map&pt=37.586944,55.743611,pm2rdm"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allowFullScreen
+                className="border-0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12 animate-fade-in">
