@@ -187,49 +187,102 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="team" className="py-20 px-4">
+      <section id="team" className="py-20 px-4 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Наша команда</h2>
             <p className="text-xl text-muted-foreground">Профессионалы, создающие экологичное будущее</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-32 h-32 bg-primary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Icon name="User" size={64} className="text-primary" />
+          <div className="space-y-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/6d06e6bd-7a3a-46fd-84be-f579ed29aa59/files/92145c5c-6533-4af1-b145-cc89b9153092.jpg"
+                  alt="Анна Волкова"
+                  className="relative rounded-2xl w-full h-96 object-cover shadow-xl"
+                />
+              </div>
+              <div className="space-y-4">
+                <div className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-semibold text-sm mb-2">
+                  Главный дизайнер
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Анна Волкова</h3>
-                <p className="text-primary font-semibold mb-3">Главный дизайнер</p>
-                <p className="text-muted-foreground">
-                  15 лет опыта в создании экологичных интерьеров. Эксперт по устойчивому дизайну.
+                <h3 className="text-3xl font-bold">Анна Волкова</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  15 лет опыта в создании экологичных интерьеров. Эксперт по устойчивому дизайну, лауреат международных премий в области архитектуры и дизайна.
                 </p>
-              </CardContent>
-            </Card>
-            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-32 h-32 bg-secondary/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Icon name="User" size={64} className="text-secondary" />
+                <div className="flex gap-4 pt-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="Award" size={20} className="text-primary" />
+                    <span>150+ проектов</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="Star" size={20} className="text-primary" />
+                    <span>Сертификат LEED</span>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Дмитрий Соколов</h3>
-                <p className="text-primary font-semibold mb-3">Специалист по энергосбережению</p>
-                <p className="text-muted-foreground">
-                  Инженер-эколог с опытом внедрения энергоэффективных решений в более чем 200 проектах.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="text-center animate-scale-in hover:shadow-xl transition-shadow">
-              <CardContent className="pt-8">
-                <div className="w-32 h-32 bg-accent/30 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Icon name="User" size={64} className="text-primary" />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+              <div className="space-y-4 md:order-1">
+                <div className="inline-block px-4 py-2 bg-secondary/10 rounded-full text-secondary font-semibold text-sm mb-2">
+                  Специалист по энергосбережению
                 </div>
-                <h3 className="text-2xl font-bold mb-2">Мария Петрова</h3>
-                <p className="text-primary font-semibold mb-3">Менеджер проектов</p>
-                <p className="text-muted-foreground">
-                  Координирует все этапы работы, обеспечивая безупречное качество и сроки реализации.
+                <h3 className="text-3xl font-bold">Дмитрий Соколов</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Инженер-эколог с опытом внедрения энергоэффективных решений в более чем 200 проектах. Специализируется на умных системах автоматизации зданий.
                 </p>
-              </CardContent>
-            </Card>
+                <div className="flex gap-4 pt-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="Zap" size={20} className="text-secondary" />
+                    <span>200+ проектов</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="TrendingDown" size={20} className="text-secondary" />
+                    <span>-40% энергии</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative group md:order-2">
+                <div className="absolute -inset-1 bg-gradient-to-r from-secondary to-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/6d06e6bd-7a3a-46fd-84be-f579ed29aa59/files/fe0cb327-9764-4512-bc59-fe157c8ef3f8.jpg"
+                  alt="Дмитрий Соколов"
+                  className="relative rounded-2xl w-full h-96 object-cover shadow-xl"
+                />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 items-center animate-fade-in">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <img 
+                  src="https://cdn.poehali.dev/projects/6d06e6bd-7a3a-46fd-84be-f579ed29aa59/files/8976a9da-a68d-4ad3-9adc-9bff03cf7e00.jpg"
+                  alt="Мария Петрова"
+                  className="relative rounded-2xl w-full h-96 object-cover shadow-xl"
+                />
+              </div>
+              <div className="space-y-4">
+                <div className="inline-block px-4 py-2 bg-accent/50 rounded-full text-accent-foreground font-semibold text-sm mb-2">
+                  Менеджер проектов
+                </div>
+                <h3 className="text-3xl font-bold">Мария Петрова</h3>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Координирует все этапы работы, обеспечивая безупречное качество и сроки реализации. MBA в области устойчивого развития, 10+ лет управления крупными проектами.
+                </p>
+                <div className="flex gap-4 pt-4">
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="CheckCircle2" size={20} className="text-primary" />
+                    <span>98% в срок</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-muted-foreground">
+                    <Icon name="Users" size={20} className="text-primary" />
+                    <span>Команда 15 человек</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
